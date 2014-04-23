@@ -23,6 +23,7 @@ options
     .option('--namespace-clean-delay <seconds>', 'Minimum delay to wait before to clean an empty namespace (default 60)', parseFloat, 60)
     .option('--demo-port <port>', 'Public port on which to bind the demo server (default 8080, 0 to disable)', parseInt, 8080)
     .option('--stats-port <port>', 'Local port on which to bind the global stats server (default 1442, 0 to disable)', parseInt, 1442)
+    .option('--single-stats-port <port>', 'Local port on which to bind the single stat server (default 3442, 0 to disable)', parseInt, 3442)
     .option('--notification-port <port>', 'Local port on which to bind the global notification server (default 2442, 0 to disable)', parseInt, 2442)
     .parse(process.argv);
 
@@ -74,6 +75,12 @@ if (cluster.isMaster)
     {
         require('./lib/stats').StatsServer({port: options.statsPort, audience: audience});
     }
+
+    if (options.singleStatsPort)
+    {
+        require('./lib/single-stats').SingleStatsServer({port: options.singleStatsPort, audience: audience});
+    }
+
 
     if (options.clusterAddr)
     {
