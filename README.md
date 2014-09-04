@@ -46,6 +46,8 @@ Here are available parameters:
       --demo-port <port>                   Public port on which to bind the demo server (default 8080, 0 to disable)
       --stats-port <port>                  Local port on which to bind the global stats server (default 1442, 0 to disable)
       --notification-port <port>           Local port on which to bind the global notification server (default 2442, 0 to disable)
+      --single-stats-port <port>           Local port on which to bind the single stat server (default 3442, 0 to disable)
+      --hadoop-stats-port <port>           Local port on which to bind the hadoop stat server (default 4442, 0 to disable)
 
 In the webpage of the event, add the following javascript to join an event.:
 
@@ -116,4 +118,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
