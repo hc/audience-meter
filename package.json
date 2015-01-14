@@ -1,7 +1,10 @@
 {
   "name": "audience-meter",
-  "version": "2.1.3",
-  "engine": "node >= 0.8.19",
+  "version": "2.2.0",
+  "engines":
+  {
+    "node": "~0.10.0"
+  },
   "dependencies":
   {
     "commander": "2.1.0",
@@ -9,4 +12,3 @@
     "msgpack": "0.2.2"
   }
 }
-
