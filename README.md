@@ -46,8 +46,8 @@ Here are available parameters:
       --demo-port <port>                   Public port on which to bind the demo server (default 8080, 0 to disable)
       --stats-port <port>                  Local port on which to bind the global stats server (default 1442, 0 to disable)
       --notification-port <port>           Local port on which to bind the global notification server (default 2442, 0 to disable)
-      --single-stats-port <port>           Local port on which to bind the single stat server (default 3442, 0 to disable)
-      --hadoop-stats-port <port>           Local port on which to bind the hadoop stat server (default 4442, 0 to disable)
+      --hadoop-stats-port <port>           Local port on which to bind the hadoop stat server (default 3442, 0 to disable)
+      --single-stats-port <port>           Local port on which to bind the single stat server (default 4442, 0 to disable)
 
 In the webpage of the event, add the following javascript to join an event.:
 
